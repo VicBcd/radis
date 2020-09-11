@@ -36,14 +36,9 @@ to register it on Pypi see register.py::
 from __future__ import print_function
 from __future__ import absolute_import
 from setuptools import setup, find_packages
-import codecs
 import io
 import re
-import os
-import io
 from os.path import abspath, dirname, join, exists
-import re
-import sys
 
 # Build description from README (PyPi compatible)
 # -----------------------------------------------
@@ -60,17 +55,17 @@ def yield_sphinx_only_markup(lines):
 
     :param file_inp:     a `filename` or ``sys.stdin``?
     :param file_out:     a `filename` or ``sys.stdout`?`
-    
+
     References
     ----------
-    
+
     https://stackoverflow.com/questions/16367770/my-rst-readme-is-not-formatted-on-pypi-python-org
 
     Notes
     -----
-    
+
     Check output with::
-        
+
         python setup.py --long-description | rst2html.py > output.html
 
     """
@@ -180,7 +175,7 @@ setup(
     extras_require={
         "dev": [
             "numpydoc",  # for Jedi (autocompletion) to recognize
-            "black",  # for code-linting in accordance to PEP8
+            "black>=20.8b1",  # for code-linting in accordance to PEP8
             "isort",  # for sorting imports
             "pre-commit",  # to enforce Black before each commit
         ]

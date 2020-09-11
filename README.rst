@@ -1,5 +1,5 @@
- | Users: |badge_pypi|  |badge_pypistats| |badge_article| |badge_docs| |badge_binder| |badge_gitter| 
- | Devs : |badge_contributors| |badge_travis| |badge_coverage| |badge_license| 
+ | |badge_pypi|  |badge_pypistats| |badge_article| |badge_docs| |badge_binder| |badge_gitter| |badge_slack| 
+ | |badge_contributors| |badge_travis| |badge_coverage| |badge_license| 
     
 *****************************************
 `RADIS <https://radis.readthedocs.io/>`__
@@ -153,7 +153,7 @@ If encountering any problem, first refer to the list of known
 `Issues <https://github.com/radis/radis/issues?utf8=%E2%9C%93&q=is%3Aissue>`__ on GitHub.
 We appreciate your feedback and suggestions!
 
-For any question, please join the discussion channel on Gitter: |badge_gitter|
+For any question, please join the discussion channel on Gitter |badge_gitter|, Slack |badge_slack| 
 or the `Q&A Forum <https://groups.google.com/forum/#!forum/radis-radiation>`__ 
 
 
@@ -175,7 +175,7 @@ Links
 
 - Documentation: |badge_docs|
 
-- Help: |badge_gitter| `Q&A forum <https://groups.google.com/forum/#!forum/radis-radiation>`__
+- Help: |badge_gitter| |badge_slack|  `Q&A forum <https://groups.google.com/forum/#!forum/radis-radiation>`__
 
 - Article: |badge_article|
 
@@ -259,4 +259,10 @@ See `awesome-spectra <https://github.com/erwanp/awesome-spectra>`__   |badge_awe
 .. |badge_gitter| image:: https://badges.gitter.im/Join%20Chat.svg
                   :target: https://gitter.im/radis-radiation/community
                   :alt: Gitter
+                  
+.. |badge_slack| image:: https://img.shields.io/badge/slack-join-green.svg?logo=slack
+                  :target: https://radis.github.io/slack-invite/
+                  :alt: Slack
+                  
+                  
     

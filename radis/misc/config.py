@@ -32,7 +32,8 @@ Routine Listing
 
 from __future__ import print_function, absolute_import, division, unicode_literals
 
-from radis.misc.utils import FileNotFoundError, DatabankNotFound, configparser
+from radis.misc.utils import DatabankNotFound
+import configparser
 from os.path import expanduser, join, exists, dirname
 from six import string_types
 from radis.misc.basics import compare_lists, compare_dict, stdpath
@@ -156,7 +157,7 @@ CONFIG_PATH = join(expanduser("~"), ".radis")
 
 
 def getConfig():
-    """ Read config file and returns it
+    """Read config file and returns it
 
     Config file name is harcoded: `~/.radis`
     """
@@ -183,7 +184,7 @@ def getConfig():
 
 
 def getDatabankEntries(dbname):
-    r""" Read ~/.radis config file and returns a dictionary of entries.
+    r"""Read ~/.radis config file and returns a dictionary of entries.
 
 
     Notes
@@ -294,7 +295,7 @@ def getDatabankList():
 
 
 def addDatabankEntries(dbname, dict_entries, verbose=True):
-    """ Add database dbname with entries from dict_entries. If database 
+    """Add database dbname with entries from dict_entries. If database
     already exists in ~/.radis, raises an error
     """
 
@@ -359,10 +360,10 @@ def addDatabankEntries(dbname, dict_entries, verbose=True):
 
 
 def diffDatabankEntries(dict_entries1, dict_entries2, verbose=True):
-    """ Compare two Databank entries under dict format (i.e: output of 
+    """Compare two Databank entries under dict format (i.e: output of
     getDatabankEntries)
 
-    Returns None if no differences are found, or the first different key 
+    Returns None if no differences are found, or the first different key
     """
 
     k = None
@@ -414,10 +415,10 @@ def diffDatabankEntries(dict_entries1, dict_entries2, verbose=True):
 
 
 def printDatabankEntries(dbname, crop=200):
-    """ Print databank info
+    """Print databank info
 
 
-    Parameters    
+    Parameters
     ----------
 
     dbname: str
